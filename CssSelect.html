@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .first :nth-child(2n){
+            background-color: aqua;
+        }
+        .first :nth-child(2n+1) {
+            background-color: yellow;
+        }
+
+        /* 첫번째 요소부터 5번째 요소까지 2개마다 선택 */
+        .second span:nth-child(-2n+5){
+            background-color: red;
+        }
+        /* 6번째부터 모두 선택 */
+        .second span:nth-child(n+6){
+            background-color: blueviolet;
+        }
+        /* 선택자를 두번 사용하여 교집합인 요소만 선택할 수 있다. */
+        .third :nth-child(n+3):nth-child(-n+8) {
+            background-color: brown;
+        }
+
+        .fourth p:first-of-type {
+            background-color: orange;
+        }
+        .fourth span:last-of-type {
+            background-color: orangered;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="first">
+        <span>Span 1</span>
+        <span>Span 2</span>
+        <span>Span 3</span>
+        <span>Span 4</span>
+        <span>Span 5</span>
+        <span>Span 6</span>
+        <span>Span 7</span>
+        <span>Span 8</span>
+        <span>Span 9</span>
+        <span>Span 10</span>
+      </div>
+      <br>
+      <div class="second">
+        <span>Span 1</span>
+        <span>Span 2</span>
+        <span>Span 3</span>
+        <span>Span 4</span>
+        <span>Span 5</span>
+        <span>Span 6</span>
+        <span>Span 7</span>
+        <span>Span 8</span>
+        <span>Span 9</span>
+        <span>Span 10</span>
+      </div>
+      <br>
+      <div class="third">
+        <span>Span 1</span>
+        <span>Span 2</span>
+        <span>Span 3</span>
+        <span>Span 4</span>
+        <span>Span 5</span>
+        <span>Span 6</span>
+        <span>Span 7</span>
+        <span>Span 8</span>
+        <span>Span 9</span>
+        <span>Span 10</span>
+      </div>
+      <br>
+      <div class="fourth">
+        <span>Span 1</span>
+        <span>Span 2</span>
+        <p>Span 3</p>
+        <span>Span 4</span>
+        <span>Span 5</span>
+        <p>Span 6</p>
+        <span>Span 7</span>
+        <p>Span 8</p>
+        <p>Span 9</p>
+        <p>Span 10</p>
+      </div>
+</body>
+</html>
