@@ -9,21 +9,29 @@
     $("#btn1").on("click", function() {
       $("span[title=lettuce]").css("fontSize", "30px");
     });
+
+    $("#btn2").on("click", function() {
+      $("#lettuce").css("fontSize", "30px");
+    });
+
+    $("#btn3").on("click", function() {
+      $(".lettuce").css("fontSize", "30px");
+    });
     
-	$("#btn2").on("click", function() {
+	$("#btn4").on("click", function() {
       $(this).css("fontSize", "30px");
     });
     
-    $("#btn3").on("click", function() {
+    $("#btn5").on("click", function() {
       $("ul li:first").css("color", "red");
     });
 
-    $("#btn4").on("click", function() {
-      $("ul li:second").css("color", "yellow");
+    $("#btn6").on("click", function() {
+      $("ul li:nth-child(2)").css("color", "yellow");
     });
 
-    $("#btn5").on("click", function() {
-      $("ul li:third").css("color", "orange");
+    $("#btn7").on("click", function() {
+      $("ul li:nth-child(3)").css("color", "orange");
     });
   });
     
@@ -38,10 +46,24 @@
     <button id="btn1">버튼1</button>
   </div>
   
+  <h2>아이디 선택</h2>
+  <div>
+    <p>아이디를 이용하여 선택할 수도 있습니다.</p>
+    <p>안녕하세요. <span id="lettuce">상추</span>입니다.</p>
+    <button id="btn2">버튼2</button>
+  </div>
+
+  <h2>클래스 선택</h2>
+  <div>
+    <p>클래스를 이용하여 선택할 수도 있습니다.</p>
+    <p>안녕하세요. <span class="lettuce">상추</span>입니다.</p>
+    <button id="btn3">버튼3</button>
+  </div>
+
   <h2>this 선택</h2>
   <div>
     <p>this를 이용하여 선택할 수도 있습니다.</p>
-    <button id="btn2">버튼2</button>
+    <button id="btn4">버튼4</button>
   </div>
   
   <h2>List 선택</h2>
@@ -51,9 +73,9 @@
       <li>바나나</li>
       <li>오렌지</li>
     </ul>
-    <button id="btn3">사과</button>
-    <button id="btn4">바나나</button>
-    <button id="btn5">오렌지</button>
+    <button id="btn5">사과</button>
+    <button id="btn6">바나나</button>
+    <button id="btn7">오렌지</button>
   </div>
 
 </body>
