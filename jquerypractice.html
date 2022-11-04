@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<head>
+  <meta charset="UTF-8">
+ 
+  <script>
+  $(function() {
+    $("#btn1").on("click", function() {
+      $("span[title=lettuce]").css("fontSize", "30px");
+    });
+    
+	$("#btn2").on("click", function() {
+      $(this).css("fontSize", "30px");
+    });
+    
+    $("#btn3").on("click", function() {
+      $("ul li:first").css("color", "red");
+    });
+
+    $("#btn4").on("click", function() {
+      $("ul li:second").css("color", "yellow");
+    });
+
+    $("#btn5").on("click", function() {
+      $("ul li:third").css("color", "orange");
+    });
+  });
+    
+</script>
+</head>
+<body>
+  <h1>CSS Selector attribute</h1>
+  
+  <h2>요소 선택 및 변환</h2>
+  <div>
+    <p>안녕하세요. <span title="lettuce">상추</span>입니다.</p>
+    <button id="btn1">버튼1</button>
+  </div>
+  
+  <h2>this 선택</h2>
+  <div>
+    <p>this를 이용하여 선택할 수도 있습니다.</p>
+    <button id="btn2">버튼1</button>
+  </div>
+  
+  <h2>List 선택</h2>
+  <div>
+    <ul>
+      <li>사과</li>
+      <li>바나나</li>
+      <li>오렌지</li>
+    </ul>
+    <button id="btn3">사과</button>
+    <button id="btn4">바나나</button>
+    <button id="btn5">오렌지</button>
+  </div>
+
+</body>
+</html>
