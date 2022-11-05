@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous">
+    </script>
+    <script>
+    function append() { 
+        $(document).ready(function(){
+            $(".first").append("<div class='use2'>어떻게 지내?</div>");
+        });
+    }
+    function prepend() {
+        $(document).ready(function(){
+            $(".first").prepend("<div class='use0'> 저는 상추입니다.</div>")
+        })
+    }
+    function remove() {
+        $(document).ready(function(){
+            $(".use0").remove()
+        })
+    }
+    function empty() {
+        $(document).ready(function(){
+            $(".first").empty()
+        })
+    }
+
+    </script>
+</head>
+<body>
+    <div class="first">
+        <div class="use1">안녕하세요</div>
+    </div>
+    <button onclick="append()">append</button>
+    <button onclick="prepend()">prepend</button>
+    <button onclick="remove()">remove</button>
+    <button onclick="empty()">empty</button>
+    
+</body>
+</html>
