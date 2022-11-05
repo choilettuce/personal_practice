@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            background-color: bisque;
+        }
+
+            /* h1태그를 클릭했을 때 */
+        h1:active {
+            color: orange;
+        }
+        
+        /* h1태그에 마우스 커서를 올렸을 때 */
+        h1:hover {
+            color: orange;
+        }
+        
+        /* input태그가 선택되었을 때 */
+        input:focus {
+            color: orange;
+        }
+        
+        /* 방문 후 링크 */
+        a:focus {
+            color: orange;
+        }
+
+        /* class 속성의 값이 first인 요소의 첫번째 span 자식 요소 */
+        .first span:first-child {
+            color: orange;
+        }
+        
+        /* class 속성의 값이 first인 요소의 마지막 span 자식 요소 */
+        .first span:last-child {
+            color: orange;
+        }
+        
+        /* class 속성의 값이 second인 요소의 2번째 자식 요소 */
+        .second *:nth-child(2) {
+            color: orange;
+        }
+
+        /* class 속성의 값이 second인 요소의 자식 요소 중 span 태그가 아닌 요소 */
+        .second *:not(span) {
+            color: orange;
+        }
+                
+    </style>
+</head>
+<body>
+    <h1>CSS selector</h1>
+    <div class="first">
+        <span>Span 1</span>
+        <span>Span 2</span>
+        <span>Span 3</span>
+        <span>Span 4</span>
+        <span>Span 5</span>
+        <span>Span 6</span>
+        <span>Span 7</span>
+        <span>Span 8</span>
+        <span>Span 9</span>
+        <span>Span 10</span>
+      </div>
+      <br>
+      <div class="second">
+        <a href="https://lettuce36.tistory.com/"><span>Span 1</span></a>
+        <span>Span 2</span>
+        <span>Span 3</span>
+        <span>Span 4</span>
+        <span>Span 5</span>
+        <span>Span 6</span>
+        <span>Span 7</span>
+        <span>Span 8</span>
+        <span>Span 9</span>
+        <span>Span 10</span>
+      </div>
+      <br>
+      <div>
+        <input>
+      </div>
+
+</body>
+</html>
