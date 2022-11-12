@@ -36,21 +36,29 @@ console.log(cat.mew());
 
 
 // 객체에 추가 하는 방법
-let lettuce = {
-    name : 'SH' ,
-    birth : '0102'
 
-};
-
-lettuce['gender'] = 'M';
-
-console.log(lettuce['gender']);
-
-let obj = {} // 빈 객체 선언
+let obj = {}; // 빈 객체 선언
 
 // 1. dot notation 표기법
 obj.name = 'lettuce';
 obj.age = 20
 obj.address = 'Inchoen'
+
+console.log(obj);
+
+// 2. Bracket Notation 표기법
+let lettuce2 = {};
+
+lettuce2['name'] = 'lettuce';
+lettuce2['age'] = 20;
+lettuce2['address'] = 'inchoen';
+
+console.log(lettuce2);
+
+delete lettuce2.address;
+
+console.log(lettuce2);
+
+
 
 
