@@ -23,17 +23,31 @@ console.log(obj4.c.c2);
 
 
 // 함수를 값으로 할수도 있다.
-var cat = {
-    name: "나비",
-    age : 1,
-    mew: function(){
-        return "야옹";
+// 객체 생성방식
+//1. 객체 리터럴 방식 : 변수처럼 객체를 생성하는 방식!
+let myObj = {
+
+    name: 'lettuce',
+    age: 20,
+
+    hello: function(){
+        return `이름은 ${this.name}이고, 나이는 ${this.age}입니다.`;
     }
 };
-console.log(cat);
-console.log(cat.name);
-console.log(cat.mew());
 
+console.log(myObj); 
+
+// 2. 객체 생성자 방식
+var myObj2 = new Object();
+
+myObj2.name = 'lettuce';
+myObj2['age'] = 20;
+
+myObj2.hello = function(){
+    return `이름은 ${this.name}이고, 나이는 ${this.age}입니다.`;
+};
+
+console.log(myObj2); 
 
 // 객체에 추가 하는 방법
 
@@ -42,15 +56,15 @@ let obj = {}; // 빈 객체 선언
 // 1. dot notation 표기법
 obj.name = 'lettuce';
 obj.age = 20
-obj.address = 'Inchoen'
+obj.address = 'seoul'
 
 console.log(obj);
 
 // 2. Bracket Notation 표기법
 let lettuce2 = {};
 
-lettuce2['name'] = 'lettuce';
-lettuce2['age'] = 20;
+lettuce2['name'] = 'lettuce2';
+lettuce2['age'] = 30;
 lettuce2['address'] = 'inchoen';
 
 console.log(lettuce2);
