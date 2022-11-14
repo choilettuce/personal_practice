@@ -6,9 +6,9 @@ import './index.css';
 // import Clock from './chapter04/clock';
 import CommentList from './chapter05/CommentList';
 
-ReactDOM.render(
-    <React.StrictMode>
-      <CommentList/>
-    </React.StrictMode>,
-    document.getElementById('root')
-  );
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
+  <React.StrictMode>
+    <CommentList/>
+  </React.StrictMode>
+);
