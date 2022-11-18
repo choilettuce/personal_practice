@@ -41,6 +41,18 @@ console.log("round2 : ",round2);
 console.log("round3 : ",round3);
 console.log("round4 : ",round4);
 
+//Math.floor()
+let floor1 = Math.floor(10.95); 
+let floor2 = Math.floor(11.01);
+let floor3 = Math.floor(-10.95);
+let floor4 = Math.floor(-11.01);
+
+
+console.log("floor1 : ",floor1);
+console.log("floor2 : ",floor2);
+console.log("floor3 : ",floor3);
+console.log("floor4 : ",floor4);
+
 //Math.ceil()
 let ceil1 = Math.ceil(10.49);
 let ceil2 = Math.ceil(11.01);
