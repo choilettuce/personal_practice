@@ -21,23 +21,6 @@ me['gender'] = 'M';
 console.log(me['gender']);
 
 
-//배열
-var arr1 = [12, 15, 18, 24, 29];
-console.log(arr1.length);
-arr1.push("91");
-console.log(arr1);
-arr1.pop();
-console.log(arr1);
-arr1.unshift(61);
-console.log(arr1);
-arr1.shift();
-console.log(arr1);
-
-console.log(arr1.indexOf(18));
-
-
-
-
 //참조자료형 
 var a1 = [1, 2, 3, 4, 5];
 var a2 = a1;
