@@ -48,3 +48,8 @@ console.log(arr1);
 console.log(arr1.indexOf(4));
 console.log(arr1.length);
 
+//참조자료형 
+var a1 = [1, 2, 3, 4, 5];
+var a2 = a1;
+console.log("a1 : ", a1);
+console.log("a2 : ", a2);
