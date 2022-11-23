@@ -6,11 +6,13 @@ import './index.css';
 // import Clock from './chapter04/clock';
 // import CommentList from './chapter05/CommentList';
 // import NotificationList from './chapter06/NotificationList';
-import Counter from './Counter';
+// import Accommodate from './chapter07/Accommodate';
+// import ConfirmButton from './chapter08/ConfirmButton';
+import LandingPage from './chapter09/LandingPage';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Counter/>
+    <LandingPage/>
   </React.StrictMode>
-);
+);  
