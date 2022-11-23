@@ -1,29 +1,15 @@
-n0='n0'; // 변수의 이름만 붙이면 글로벌에 저장된다
-var v0='v0';// 글로벌에 저장
-let l0='l0'; //script에 저장
-const c0 = 'c0'; // script에 저장
-console.log(v0, n0, l0, c0);
-console.log(window.v0, window.n0, window.l0, window.c0);
-function fn2(){
-    n2='n2';
-    console.log(n0, n1, n2);
-    var v2='v2';
-    console.log(v0, v2);
-    // console.log(v1)
-    let l2='l2'; 
-    console.log(l0, l2);
-    // console.log(l1);
-    const c2='c2;';
-    console.log(c0, c2);
-    // console.log(c1);
+var x = 1;
+const y = 2;
+
+function foo (a) {
+    var x = 3;
+    const y = 4;
+
+    function bar (b) {
+        const z = 5;
+        console.log(a + b + x + y + z);
+    }
+    bar(10);
 }
-function fn1(){
-    n1='n1';
-    var v1='v1';
-    let l1='l1';
-    const c1='c1';
-    fn2();
-}
-fn1();
-console.log(n2);
-// console.log(v2, l2, c2);
+
+foo(20); // 42
