@@ -10,11 +10,12 @@ import './index.css';
 // import ConfirmButton from './chapter08/ConfirmButton';
 // import LandingPage from './chapter09/LandingPage';
 // import AttendanceBook from './chapter10/AttendanceBook';
-import SignUp from './chapter11/signUp';
+// import SignUp from './chapter11/signUp';
+import Calculator from './chapter12/Calculator';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <SignUp/>
+    <Calculator/>
   </React.StrictMode>
 );  
