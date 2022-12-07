@@ -34,16 +34,16 @@ let arr4 = [true, 1, undefined, false, "h", 2, null];
 
 //배열에 추가 삭제
 arr1.push(91);
-console.log(arr1);
+console.log(arr1); // 배열의 맨끝에 값을 추가한다.
 
 arr1.pop();
-console.log(arr1);
+console.log(arr1); // 배열의 맨끝에 값을 제거한다.
 
 arr1.unshift(61);
-console.log(arr1);
+console.log(arr1); // 배열의 맨앞에 값을 추가한다.
 
 arr1.shift();
-console.log(arr1);
+console.log(arr1); // 배열의 맨앞에 값을 제거한다.
 
 console.log(arr1.indexOf(4));
 console.log(arr1.length);
