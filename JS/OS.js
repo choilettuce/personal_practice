@@ -1,18 +1,27 @@
+// require 함수를 통해 모듈을 import 한다.
+const os = require('os');
 
-// Include os module and create its object
-var os = require('os');
+// 호스트이름(컴퓨터 이름)
+console.log("Hostname : " + os.hostname());
   
-// return the endianness of system
-console.log("Endianness of system: " + os.endianness());
+// 운영체제 이름
+console.log("운영체제 이름 : " + os.type());
   
-// It returns hostname of system
-console.log("Hostname: " + os.hostname());
+// 운영체제 플랫폼
+console.log('운영체제 플랫폼 : ' + os.platform());
   
-// It return operating system name
-console.log("Operating system name: " + os.type());
-  
-// It returns the platform of os
-console.log('operating system platform: ' + os.platform());
-  
-// It returns the operating systems release.
-console.log('OS release : ' + os.release());
+// 운영체제 버전
+console.log('운영체제 버전 : ' + os.release());
+
+// 운영체제 아키텍쳐
+console.log('운영체제 아키텍쳐 : ' + os.arch());
+
+// 운영체제가 실행된 시간 
+console.log('운영체제 실행시간 :' + os.uptime());
+
+// 시스템의 총 메모리
+console.log('시스템의 총 메모리 :' + os.totalmem());
+
+// 시스템의 가용 메모리
+console.log('시스템의 가용 메모리 :' + os.freemem());
+
