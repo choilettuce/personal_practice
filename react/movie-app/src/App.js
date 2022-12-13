@@ -20,6 +20,8 @@ function App() {
       <input onChange={onChange} value={toDo} type="text" placeholder="Write your to"/>
       <button>Add to Do</button> 
       </form>
+      <hr />
+      {toDos.map((item) => (<li>{item}</li>))}
     </div>
   );
 }
