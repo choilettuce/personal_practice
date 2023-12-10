@@ -1,6 +1,7 @@
 import {BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./route/Home";
 import Detail from "./route/Detail";
+import effect from "./components/useeffect";
 
 function App() {
   return (
