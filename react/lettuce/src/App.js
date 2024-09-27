@@ -7,10 +7,13 @@ import './App.css';
 // import ScrollBox from './ref/scrollBox';
 // import Info from './hookPractice/Info';
 import Counter from './hookPractice/counter';
-
+import Conditional from './conditional/conditional';
 function App() {
   return (
+    <>
     <Counter />
+    <Conditional />
+    </>
   );
 }
 
