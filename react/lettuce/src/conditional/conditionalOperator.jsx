@@ -1,6 +1,6 @@
 import React from "react";
 
-function conditional () {
+function ConditionalOperator () {
     const name ="리액트";
 
     return (
@@ -10,4 +10,4 @@ function conditional () {
     )
 };
 
-export default conditional;
+export default ConditionalOperator;
